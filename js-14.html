@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 14</title>
+</head>
+<body>
+    <script>
+
+        let distancia= parseInt(window.prompt("Distancia recorrida en metros?"));
+
+        let horas= parseInt(window.prompt("Cuántas horas has tardado?"));
+        let min= parseInt(window.prompt("Cuántos minutos has tardado?"));
+        let seg= parseInt(window.prompt("Cuántos segundos has tardado?"));
+
+
+        
+
+
+        let horastotales= horas+ (min/60)+ (seg/3600);
+        let segundostotales= seg+ (horas*3600)+ (min*60);
+        let km= distancia/1000;
+
+
+        let metrossegundo= distancia/segundostotales;
+
+        let kilometroshora= km/horastotales;
+
+        console.log(metrossegundo+"m/s; " kilometroshora+"km/h");
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
